@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## ENUNCIADOS REPASO 3
 1. Crear una clase q se denomina MobileLibrary q contenga los siguientes atributos privados:
     - name:string
