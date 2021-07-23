@@ -58,6 +58,22 @@ export class MobileLibrary
         }
         return sumaPrecio;
     }
-;}
+
+    public printLibrary(): string
+    {
+        let impresion: string = "This are all my mobiles: \n" ;
+        let movs:Mobile [] = this.getMobiles();
+        for (let infoMobiles in movs)
+        {
+            impresion += movs[infoMobiles].printAll();
+        }
+        impresion += "\n Library Name: " + this.getName();
+        impresion += "\n Library location: "+ this.getLocation();
+        impresion += "\n TotalPrice: " + this.getTotalPrice();
+
+        return impresion;
+    }    
+
+}
 
 
